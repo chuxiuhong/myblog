@@ -1,3 +1,3 @@
 t1 test
 
-![image1](psb.png)
+![image1](/psb.png)
