@@ -14,10 +14,10 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.2.2
         with:
-          hugo-version: '0.59.1'
+          hugo-version: '0.74.2'
           extended: true
       - name: Build
-        run: hugo -D
+        run: hugo --theme=even
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2.5.1
         env:
