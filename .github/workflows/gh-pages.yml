@@ -18,6 +18,8 @@ jobs:
           extended: true
       - name: Build
         run: hugo --minify --buildDrafts
+      - name: CNAME
+        run: echo "chuxiuhong.com" > CNAME
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2.5.1
         env:
