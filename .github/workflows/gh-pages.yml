@@ -19,10 +19,10 @@ jobs:
       - name: Build
         run: hugo --minify --buildDrafts
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v2.5.1
-        env:
+        uses: peaceiris/actions-gh-pages@v3
+        with:
           ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           EXTERNAL_REPOSITORY: chuxiuhong/chuxiuhong.github.io
           PUBLISH_BRANCH: master
           PUBLISH_DIR: ./public
-          CNAME: chuxiuhong.com
+          cname: chuxiuhong.com
