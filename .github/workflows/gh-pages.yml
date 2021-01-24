@@ -9,10 +9,15 @@ jobs:
     steps:
       - name: checkout 
         uses: actions/checkout@master 
+        env:
+            ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         with: # 参数
           submodules: true
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.2.2
+        env:
+            ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         with:
           hugo-version: '0.74.2'
           extended: true
@@ -21,6 +26,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2.5.1
         env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
           ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           EXTERNAL_REPOSITORY: chuxiuhong/chuxiuhong.github.io
           PUBLISH_BRANCH: master
