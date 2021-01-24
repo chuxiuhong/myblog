@@ -1,8 +1,7 @@
 ---
-title: "一些学函数式编程的体会"
-date: 2021-01-25T00:06:00+08:00
+title: "C# Call Rust Dll"
+date: 2021-01-25T00:46:59+08:00
 draft: true
-tags: ["Rust","C#"]
 ---
 
 ## 实现目的
