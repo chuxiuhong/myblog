@@ -1,5 +1,5 @@
 ---
-title: "一些学函数式编程的体会"
+title: "C#调用Rust导出的DLL"
 date: 2021-01-25T00:06:00+08:00
 draft: true
 tags: ["Rust","C#"]
